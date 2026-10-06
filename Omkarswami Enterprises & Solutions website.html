@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Omkarswami Enterprises & Solutions | Industrial Engineering</title>
+<meta name="description" content="Omkarswami Enterprises & Solutions — industrial mechanical, HVAC, piping, fabrication, erection, civil and finishing solutions. Established in 2001.">
+<style>
+:root{
+  --navy:#07111f; --navy2:#0d1d30; --teal:#13b5a6; --gold:#f5a623;
+  --white:#fff; --muted:#aebed0; --line:rgba(255,255,255,.10);
+  --bg:#f4f7fa; --ink:#102033;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.nav{padding-top:env(safe-area-inset-top,0px);position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,17,31,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:.04em;color:#fff;font-size:15px}
+.brand span{color:var(--teal)}
+.links{display:flex;gap:28px;color:#cbd7e3;font-size:13px;font-weight:700}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:12px 18px;font-weight:800;font-size:13px}
+.btn-primary{background:var(--teal);color:#031015}
+.btn-outline{border:1px solid rgba(255,255,255,.25);color:#fff}
+.hero{min-height:720px;background:
+radial-gradient(circle at 82% 25%,rgba(19,181,166,.20),transparent 28%),
+linear-gradient(115deg,#07111f 0%,#0c1c2f 62%,#102b38 100%);color:#fff;padding:150px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -10% -190px auto;width:650px;height:350px;border:1px solid rgba(245,166,35,.18);transform:rotate(-8deg);border-radius:50%}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.18em;font-weight:900;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.045em;max-width:900px}
+.hero p{max-width:680px;color:#bdccdb;font-size:18px;margin:25px 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:75px;max-width:760px}
+.stat{background:rgba(7,17,31,.65);padding:20px}
+.stat b{display:block;font-size:25px;color:#fff}.stat small{color:#91a4b8}
+.section{padding:92px 0}
+.section.dark{background:var(--navy);color:#fff}
+.kicker{color:var(--teal);font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.035em;line-height:1.08}
+.lead{color:#657487;max-width:720px;margin-top:16px}
+.dark .lead{color:#aebed0}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.aboutbox{border:1px solid #dce4eb;background:#fff;border-radius:18px;padding:28px;box-shadow:0 18px 45px rgba(20,38,55,.08)}
+.aboutbox .big{font-size:54px;font-weight:950;line-height:1;color:var(--teal)}
+.aboutbox p{margin-top:8px;color:#617184}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.card{background:#fff;border:1px solid #e1e8ef;border-radius:16px;padding:27px;min-height:230px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(20,38,55,.10)}
+.icon{width:42px;height:42px;border-radius:10px;background:#e8f8f6;color:#078d80;display:grid;place-items:center;font-weight:950;margin-bottom:22px}
+.card h3{font-size:19px;margin-bottom:12px}.card ul{list-style:none;color:#667688;font-size:14px}.card li{margin:6px 0}.card li:before{content:"→";color:var(--teal);font-weight:900;margin-right:8px}
+.cap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+.cap div{border:1px solid var(--line);border-radius:14px;padding:22px;background:rgba(255,255,255,.035)}
+.cap b{display:block;font-size:15px}.cap span{display:block;color:#9eb0c1;font-size:12px;margin-top:6px}
+.process{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:42px}
+.step{padding:20px 14px;border-top:2px solid var(--teal);background:#0d1d30;border-radius:0 0 10px 10px}.step b{font-size:12px;color:#fff}.step span{display:block;color:#9eb0c1;font-size:11px;margin-top:6px}
+.contact{background:linear-gradient(115deg,#0a1727,#0d2a34);color:#fff;border-radius:24px;padding:55px;display:flex;justify-content:space-between;gap:30px;align-items:center}
+.contact p{color:#aebed0;margin-top:10px}.contact .address{margin-top:22px;color:#d8e2eb;font-size:14px}
+footer{background:#050c15;color:#91a2b5;padding:28px 0;font-size:12px}
+.footerin{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.links{display:none}.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.cap{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.contact{padding:35px;display:block}}
+@media(max-width:560px){.hero{min-height:auto;padding-top:130px}.stats,.grid,.cap{grid-template-columns:1fr}.section{padding:65px 0}.contact{border-radius:16px}.footerin{display:block}.footerin div+div{margin-top:8px}h1{font-size:45px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container navin">
+  <a class="brand" href="#top">OMKARSWAMI <span>ENTERPRISES</span></a>
+  <div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#execution">Execution</a><a href="#contact">Contact</a></div>
+  <a class="btn btn-primary" href="tel:+919892037218">Call Now</a>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="container">
+  <div class="eyebrow">Established 2001 · Panvel / Taloja MIDC</div>
+  <h1>Engineering solutions.<br><span style="color:#13b5a6">Reliable execution.</span></h1>
+  <p>Integrated mechanical, HVAC, piping, fabrication, erection, civil and finishing solutions for industrial and commercial project requirements.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="#services">Explore capabilities</a>
+    <a class="btn btn-outline" href="#contact">Talk to us</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>25 Years</b><small>Experience since 2001</small></div>
+    <div class="stat"><b>Multi-Discipline</b><small>Mechanical · HVAC · Civil</small></div>
+    <div class="stat"><b>Single Partner</b><small>Coordinated site execution</small></div>
+  </div>
+</div>
+</header>
+
+<section class="section" id="about"><div class="container about">
+  <div><div class="kicker">About Omkarswami</div><h2>One accountable team for multiple site requirements.</h2>
+  <p class="lead">Omkarswami Enterprises & Solutions is an engineering and contracting business providing mechanical, HVAC, piping, fabrication, erection, civil and finishing services. Our positioning is built around practical site execution, coordinated workmanship, quality and dependable project support.</p></div>
+  <div class="aboutbox"><div class="big">2001</div><b>Established</b><p>Serving industrial and commercial project requirements from the Panvel / Taloja MIDC region.</p><br><b>Core focus</b><p>Mechanical · HVAC · Piping · Fabrication · Erection · Civil · Finishing</p></div>
+</div></section>
+
+<section class="section" id="services"><div class="container">
+  <div class="kicker">Capabilities</div><h2>Built around the work your site actually needs.</h2>
+  <p class="lead">A focused service portfolio combining the mechanical and civil scopes listed in our existing business profile.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">M</div><h3>Mechanical Works</h3><ul><li>Insulation</li><li>Structural piping</li><li>PP / FRP / HDPE</li><li>Equipment & machinery erection</li></ul></article>
+    <article class="card"><div class="icon">H</div><h3>HVAC & Ducting</h3><ul><li>HVAC ducting</li><li>Duct designing</li><li>Duct installation</li><li>Associated insulation works</li></ul></article>
+    <article class="card"><div class="icon">F</div><h3>Fabrication & Erection</h3><ul><li>Structural fabrication</li><li>Piping supports & site works</li><li>Equipment erection</li><li>Installation assistance</li></ul></article>
+    <article class="card"><div class="icon">C</div><h3>Civil & Finishing</h3><ul><li>Painting</li><li>Floor coating & coving</li><li>Roofing sheet</li><li>Associated civil works</li></ul></article>
+    <article class="card"><div class="icon">I</div><h3>Partitions & Interiors</h3><ul><li>Aluminium partitions</li><li>Wooden partitions</li><li>False ceiling</li><li>Carpentry</li></ul></article>
+    <article class="card"><div class="icon">T</div><h3>Turnkey Coordination</h3><ul><li>Site requirement review</li><li>Execution planning</li><li>Multi-trade coordination</li><li>Finishing & handover support</li></ul></article>
+  </div>
+</div></section>
+
+<section class="section dark"><div class="container">
+  <div class="kicker">Why Omkarswami</div><h2>Practical engineering. Disciplined execution.</h2>
+  <p class="lead">Our focus is on what we can demonstrate on site: proven capability, clear scope and dependable delivery for industrial and commercial clients.</p>
+  <div class="cap">
+    <div><b>Established Experience</b><span>Operating since 2001</span></div>
+    <div><b>Integrated Scope</b><span>Mechanical + HVAC + Civil</span></div>
+    <div><b>Site Execution</b><span>Installation & erection focused</span></div>
+    <div><b>Single Coordination</b><span>Multiple related work packages</span></div>
+  </div>
+</div></section>
+
+<section class="section" id="execution"><div class="container">
+  <div class="kicker">Execution approach</div><h2>From requirement to handover.</h2>
+  <div class="process">
+    <div class="step"><b>01 · Understand</b><span>Scope, drawings & site conditions</span></div>
+    <div class="step"><b>02 · Plan</b><span>Manpower, sequence & coordination</span></div>
+    <div class="step"><b>03 · Prepare</b><span>Fabrication & work preparation</span></div>
+    <div class="step"><b>04 · Execute</b><span>Installation & erection</span></div>
+    <div class="step"><b>05 · Finish</b><span>Civil, coating & finishing works</span></div>
+    <div class="step"><b>06 · Handover</b><span>Inspection & completion support</span></div>
+  </div>
+</div></section>
+
+<section class="section" id="contact"><div class="container"><div class="contact">
+  <div><div class="kicker">Start a project</div><h2>Have a site requirement?</h2>
+  <p>Share your scope, drawings or project requirement and connect with Omkarswami Enterprises & Solutions.</p>
+  <div class="address"><b>Office:</b> Panvel, Maharashtra – 410206<br><b>Workshop:</b> Taloja MIDC, Navi Mumbai</div></div>
+  <div><a class="btn btn-primary" href="tel:+919892037218">Call Pramod Mahamunkar · 98920 37218</a><br><br>
+  <a class="btn btn-outline" href="tel:+919004307797">Call Arjun Singh · 90043 07797</a></div>
+</div></div></section>
+
+<footer><div class="container footerin"><div>© 2001–2026 Omkarswami Enterprises & Solutions</div><div>Industrial Engineering · Mechanical · HVAC · Civil · Fabrication</div></div></footer>
+</body></html>
